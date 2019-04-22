@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2B5E77226E89A80066C07C /* MarvelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B5E76226E89A80066C07C /* MarvelModels.swift */; };
 		A13D20961F9D323300EB19F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D20951F9D323300EB19F7 /* AppDelegate.swift */; };
 		A13D20981F9D323300EB19F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D20971F9D323300EB19F7 /* ViewController.swift */; };
 		A13D209B1F9D323300EB19F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A13D20991F9D323300EB19F7 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		405DBF3A072575296A64133B /* Pods-HeroisMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroisMarvel.release.xcconfig"; path = "Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel.release.xcconfig"; sourceTree = "<group>"; };
+		5C2B5E76226E89A80066C07C /* MarvelModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModels.swift; sourceTree = "<group>"; };
 		A13D20921F9D323300EB19F7 /* HeroisMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroisMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A13D20951F9D323300EB19F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A13D20971F9D323300EB19F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +52,6 @@
 				BAA6E98DC9D013C6DDF653C2 /* Pods-HeroisMarvel.debug.xcconfig */,
 				405DBF3A072575296A64133B /* Pods-HeroisMarvel.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -80,6 +81,7 @@
 				A13D20A91F9D333F00EB19F7 /* HeroViewController.swift */,
 				A13D20A71F9D331600EB19F7 /* HeroesTableViewController.swift */,
 				A13D20991F9D323300EB19F7 /* Main.storyboard */,
+				5C2B5E76226E89A80066C07C /* MarvelModels.swift */,
 				A13D209C1F9D323300EB19F7 /* Assets.xcassets */,
 				A13D209E1F9D323300EB19F7 /* LaunchScreen.storyboard */,
 				A13D20A11F9D323300EB19F7 /* Info.plist */,
@@ -129,7 +131,7 @@
 				TargetAttributes = {
 					A13D20911F9D323300EB19F7 = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -223,6 +225,7 @@
 				A13D20AA1F9D333F00EB19F7 /* HeroViewController.swift in Sources */,
 				A13D20981F9D323300EB19F7 /* ViewController.swift in Sources */,
 				A13D20961F9D323300EB19F7 /* AppDelegate.swift in Sources */,
+				5C2B5E77226E89A80066C07C /* MarvelModels.swift in Sources */,
 				A13D20A81F9D331600EB19F7 /* HeroesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,11 +364,13 @@
 			baseConfigurationReference = BAA6E98DC9D013C6DDF653C2 /* Pods-HeroisMarvel.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HeroisMarvel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbrito.HeroisMarvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -376,11 +381,13 @@
 			baseConfigurationReference = 405DBF3A072575296A64133B /* Pods-HeroisMarvel.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = HeroisMarvel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ericbrito.HeroisMarvel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
