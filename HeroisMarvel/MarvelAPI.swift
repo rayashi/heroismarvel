@@ -27,7 +27,7 @@ class MarvelAPI {
             startsWith = ""
         }
         let url = baseURL + "offset=\(offset)&limit=\(limit)&" + startsWith + getCredentials()
-        print(url)
+
         AF.request(url).responseJSON { (response) in
             guard let data = response.data else {
                 onComple(nil)
