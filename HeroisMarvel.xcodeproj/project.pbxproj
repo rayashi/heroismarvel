@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C2A73EC226FD36C007FFC23 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2A73EB226FD36C007FFC23 /* HeroTableViewCell.swift */; };
 		5C2B5E77226E89A80066C07C /* MarvelModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B5E76226E89A80066C07C /* MarvelModels.swift */; };
 		5C2B5E79226E8CBA0066C07C /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C2B5E78226E8CBA0066C07C /* MarvelAPI.swift */; };
 		A13D20961F9D323300EB19F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13D20951F9D323300EB19F7 /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		405DBF3A072575296A64133B /* Pods-HeroisMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HeroisMarvel.release.xcconfig"; path = "Target Support Files/Pods-HeroisMarvel/Pods-HeroisMarvel.release.xcconfig"; sourceTree = "<group>"; };
+		5C2A73EB226FD36C007FFC23 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
 		5C2B5E76226E89A80066C07C /* MarvelModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelModels.swift; sourceTree = "<group>"; };
 		5C2B5E78226E8CBA0066C07C /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
 		A13D20921F9D323300EB19F7 /* HeroisMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeroisMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +85,7 @@
 				A13D20A91F9D333F00EB19F7 /* HeroViewController.swift */,
 				A13D20A71F9D331600EB19F7 /* HeroesTableViewController.swift */,
 				A13D20991F9D323300EB19F7 /* Main.storyboard */,
+				5C2A73EB226FD36C007FFC23 /* HeroTableViewCell.swift */,
 				5C2B5E76226E89A80066C07C /* MarvelModels.swift */,
 				5C2B5E78226E8CBA0066C07C /* MarvelAPI.swift */,
 				A13D209C1F9D323300EB19F7 /* Assets.xcassets */,
@@ -230,6 +233,7 @@
 				A13D20961F9D323300EB19F7 /* AppDelegate.swift in Sources */,
 				5C2B5E79226E8CBA0066C07C /* MarvelAPI.swift in Sources */,
 				5C2B5E77226E89A80066C07C /* MarvelModels.swift in Sources */,
+				5C2A73EC226FD36C007FFC23 /* HeroTableViewCell.swift in Sources */,
 				A13D20A81F9D331600EB19F7 /* HeroesTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

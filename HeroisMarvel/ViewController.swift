@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? HeroesTableViewController else { return }
+        vc.name = tfName.text ?? ""
+    }
 
 }
 

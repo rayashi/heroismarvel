@@ -17,8 +17,33 @@ class HeroesTableViewController: UITableViewController {
         return label
     }()
     
+    var heros: [Hero] = []
+    var name: String = ""
+    var loading: Bool = true
+    var currentPage: Int = 0
+    var total: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        label.text = "Buscando herois..."
+        loadHeros()
+    }
+    
+    func loadHeros() {
+        loading = true
+        MarvelAPI.loadHeros(name: name, page: currentPage) { (marvelInfo) in
+            if let info = marvelInfo {
+                self.heros += info.data.results
+                self.total = info.data.total
+                DispatchQueue.main.async {
+                    self.loading = false
+                    self.tableView.reloadData()
+                    self.label.text = "Nenhum heroi encontrado com o nome \(self.name)"
+                    print(info.data.total)
+                }
+            }
+            
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -28,19 +53,17 @@ class HeroesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        tableView.backgroundView = heros.count > 0 ? nil : label
+        return heros.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! HeroTableViewCell
+        cell.prepare(with: heros[indexPath.row])
         return cell
     }
-    */
-
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
